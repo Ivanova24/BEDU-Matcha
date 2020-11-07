@@ -1,22 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=styles.css>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Web de Ivanova</title>
 </head>
 <body>
-    <h1>Build your blog. Build your business.</h1>
+
+    <header class="header">
+        <a href="/" class="logo">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="logo-matcha">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li>Platform</li>
+                <li>Pricing</li>
+                <li>Customers</li>
+                <li>Resources</li>
+                <li>About</li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <a href="/login">Sign In</a>
+            <button type="submit">Start free trial</button>
+        </div>
+
+    </header>
+
+    <section class="main">
+        <h1 class="text_main">Build your blog. Build your business.</h1>
     <p>Instantly publish articles, drive more traffic, grow your email list, and see your blog´s impact on sales.</p>
     <form>
-        <input type="email">
-        <button type="submit">
+        <input type="email" name="email" placeholder="Enter email address">
+        <button class="email" type="submit">
             Try it now &rarr;
         </button>
     </form>
     <h5>Start publishing today with a <b>free 7-days trial.</b></h5>
     <h5><b>No credit card</b> required.</h5>
     <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="capterra">
+    </section>
+
+    
 </body>
 </html>
