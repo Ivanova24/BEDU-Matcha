@@ -1,3 +1,5 @@
+/* font importado de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap');
 * {
     box-sizing: 0;
     margin: 0;
@@ -9,9 +11,11 @@ body {
 }
 
 h1 {
+    /*Cambio de font family*/
+    font-family: 'Alegreya', serif;
     color:  #025157;
 	text-align: center;
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
     font-weight: 900;
     font-size: 3rem;
 }
@@ -97,6 +101,11 @@ li {
     padding-bottom: 12px;
     border: 0;
     border-radius: 5px;
+}
+.main>*{
+    /*agregar margen entre los elementos de la seccion main*/
+
+    margin:10px 0 10px 0;
 }
 
 
