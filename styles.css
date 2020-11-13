@@ -99,3 +99,28 @@ li {
     border-radius: 5px;
 }
 
+
+/* Se agregan estilos al email address :P */
+form{
+    margin: 25px 0px;
+}
+
+input[type=email]{
+    padding: 15px;
+    width: 250px;
+    border-radius:  8px 0px 0px 8px;
+    border: 1px solid darkgray;
+    outline: 0px;
+    margin-right: -2.5px;
+
+}
+.email{
+    padding: 15px;
+    width: 110px;
+    border-radius:  0px 8px 8px 0px;
+    border: 1px solid darkgray;
+    outline: 0px;
+    cursor: pointer;
+    margin-left: -2.5px;
+
+}
