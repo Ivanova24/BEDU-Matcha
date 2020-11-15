@@ -1,5 +1,8 @@
-/* font importado de google fonts */
+
+/* Estilos generales */
+
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap');
+
 * {
     box-sizing: 0;
     margin: 0;
@@ -8,35 +11,28 @@
 
 body {
     background-color: #fffbf7;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
 }
 
-h1 {
-    /*Cambio de font family*/
-    font-family: 'Alegreya', serif;
-    color:  #025157;
-	text-align: center;
-    /*font-family: 'Roboto', sans-serif;*/
-    font-weight: 900;
-    font-size: 3rem;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
 }
 
-h5 {
-    color: #a6aaaa; 
-}
+/* Estilos para barra de navegación  */
 
-p {
-    color: #46484c;
-    font-size: 1.1rem;
-}
-
-section .email {
-    color: #fff;
-    background-color: #025157;
-}  
-
-.main {
-    text-align: center;
-    margin-top: 4rem;
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    background-color: #fffbf7;
 }
 
 .header {
@@ -44,11 +40,6 @@ section .email {
     font-size: 0;
     height: 45px;
     font-family: sans-serif;
-}
-
-li {
-    display: inline;
-    padding-left: 1rem;
 }
 
 .header > * {
@@ -68,28 +59,32 @@ li {
 }
 
 .navbar {
-    width: 70%;
+    width: 65%;
     text-align: center;
     color: #025157;
     font-weight: 500;
 }
 
+li {
+    display: inline;
+    padding-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #025157
+}
+
 .actions {
-    width: 15%;
+    width: 20%;
     text-align: right;
     font-size: 14px;
     font-weight: 600;
 }
 
-.actions > * {
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
 .actions a {
-    color: #676767;
+    color: #17959e;
     text-decoration: none;
-    
 }
 
 .actions button {
@@ -101,35 +96,206 @@ li {
     padding-bottom: 12px;
     border: 0;
     border-radius: 5px;
+    margin-left: 2rem;
 }
+
+/* Estilos de contenido principal  */
+
+h1 {
+    font-family: 'Alegreya', serif;
+    color:  #025157;
+	text-align: center;
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+
+h4 {
+    color: #46484c;
+    font-family: "Slabo 27px", serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+p {
+    color: #8b8b8bcc;
+    margin-top: 15px;
+    margin-bottom: 1rem;
+}
+
+.signup-form{
+    text-align: center;
+}
+
+input[type=email]{
+    width: 250px;
+    height: 55px;
+    padding: 10px;
+    border: 1px solid darkgrey;
+    outline: 0px;
+    border-radius: 8px 0px 0px 8px;
+    margin-right: -3px;
+}
+
+button[type=submit] {
+    width: 130px;
+    height: 55px;
+    padding: 10px;
+    outline: 0px;
+    border: 0px;
+    border-radius: 0px 8px 8px 0px;
+    margin-left: -2px;
+    cursor: pointer;
+}
+
+button {
+    color: #fff;
+    background-color: #025157;
+}
+
+
+
+
+section .email {
+    color: #fff;
+    background-color: #025157;
+}  
+
+.main {
+    text-align: center;
+    margin-top: 13rem;
+}
+
+
 .main>*{
     /*agregar margen entre los elementos de la seccion main*/
 
     margin:10px 0 10px 0;
 }
 
-
-/* Se agregan estilos al email address :P */
 form{
     margin: 25px 0px;
+    height: 55px;
 }
 
-input[type=email]{
-    padding: 15px;
-    width: 250px;
-    border-radius:  8px 0px 0px 8px;
-    border: 1px solid darkgray;
-    outline: 0px;
-    margin-right: -2.5px;
 
+img {
+    vertical-align: middle;
+    border-style: none;
 }
-.email{
-    padding: 15px;
-    width: 110px;
-    border-radius:  0px 8px 8px 0px;
-    border: 1px solid darkgray;
-    outline: 0px;
-    cursor: pointer;
-    margin-left: -2.5px;
 
+.intro > img {
+    width: 53rem;
+    margin-top: 2rem;
 }
+
+figure {
+    margin-top: 32 px;
+    margin: 0 0 1rem;
+    display: block;
+}
+
+
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    
+}
+
+.text-publish {
+    font-family: 'Alegreya', serif;
+    color:  #025157;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.description {
+    color: #343434;
+    font-size: 1rem;
+}
+
+.explanatory-video{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex: 1;
+}
+
+.publish {
+    flex: 1;
+}
+
+.explanatory-video {
+    width: 120px;
+    margin-top: 10px;
+}
+
+
+
+/* Estilos de caracteristicas */
+
+.features {
+    background-color: #025157;
+    padding: 5% 10%;
+    display: grid;
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+  }
+  
+  .features .feature-card {
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .features .feature-card .feature-content {
+    padding: 30px 20px 40px 40px;
+    flex: 2;
+  }
+  
+  .features .feature-card .feature-content > * {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  
+  .features .feature-card .feature-content img {
+    width: 50px;
+  }
+  
+  .features .feature-card .feature-content h3 {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+  }
+  
+  .features .feature-card .feature-content p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+  }
+  
+  .features .feature-card .feature-content a {
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .features .feature-card .feature-image {
+    flex: 1;
+    width: 40%;
+    position: relative;
+    right: -50px;
+    height: 80%;
+  }
+  
+  .features .feature-card .feature-image figure,
+  .features .feature-card .feature-image img {
+    margin-top: 0;
+    height: 100%;
+  }
