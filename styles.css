@@ -404,7 +404,7 @@ figure {
       }
 
       .text_main {
-          font-size: 30px;
+          font-size: 1.875rem;
       }
 
       main h4 {
@@ -412,8 +412,8 @@ figure {
       }
 
       input[type=email] {
-          width: 6.25rem;
-          font-size: 11px;
+          width: 100px;
+          font-size: 0.6875rem;
       }
 
       .banner > img {
@@ -421,8 +421,67 @@ figure {
       }
 
       figure.intro > img {
-          width: 85%; 
+          width: 90%; 
       }
+
+      /* Media queries previos al banner */
+
+      .promo {
+          flex-direction: column;
+          max-width: 90%;
+      }
+
+      .explanatory-video {
+        width: 100%;
+      }
+
+      .explanatory-video > video {
+          width: 100%;
+      }
+
+      .explanatory-video > img {
+          width: 60%;
+      }
+
+     .text-publish {
+         font-size: 1.5625rem;
+         margin-top: 15px;
+     }
+
+     .publish > form > input[type=email] {
+         width: 70%
+         font-size: 0.9rem;
+     }
+
+     .main > form > input[type=email] {
+         width: 40%;
+         font-size: 0.9rem;
+     }
+
+     .features {
+         grid-template: repeat(4, 1fr) / 1fr;
+         padding-left: 0;
+         padding-right: 0;
+     }
+
+     .feature-image {
+         display: none;
+     }
+
+     .functionality {
+         padding-left: 0;
+         padding-right: 0;
+     }
+
+     .functionality__title {
+         font-size: 30px;
+         margin-top: 25px;;
+     }
+
+     .functionality__description {
+         max-width: 90%;
+     }
+
   }
 
   
