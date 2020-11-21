@@ -474,12 +474,18 @@ figure {
      }
 
      .functionality__title {
-         font-size: 30px;
-         margin-top: 25px;;
+         font-size: 1.875rem;
+         margin-top: 1.5625rem;;
      }
 
      .functionality__description {
          max-width: 90%;
+     }
+
+     .steps {
+         display: grid;
+         grid-template: inherit;
+         grid-gap: 20px;
      }
 
   }
