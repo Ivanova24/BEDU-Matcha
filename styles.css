@@ -25,80 +25,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
 }
 
-/* Estilos para barra de navegación  */
-
-.fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0; 
-    background-color: #fffbf7;
-}
-
-.header {
-    margin: 40px 20px 0 20px;
-    font-size: 0;
-    height: 45px;
-    font-family: sans-serif;
-}
-
-.header > * {
-    display: inline-block;
-    font-size: 16px;
-    vertical-align: middle;
-    height: 100%;
-    line-height: 45px;;
-}
-
-.logo {
-    width: 15%;
-}
-
-.logo > img {
-    height: 100%;;
-}
-
-.navbar {
-    width: 65%;
-    text-align: center;
-    color: #025157;
-    font-weight: 500;
-}
-
-li {
-    display: inline;
-    padding-left: 1rem;
-}
-
-a {
-    text-decoration: none;
-    color: #025157
-}
-
-.actions {
-    width: 20%;
-    text-align: right;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.actions a {
-    color: #17959e;
-    text-decoration: none;
-}
-
-.actions button {
-    color: white;
-    background-color: #67b54b;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border: 0;
-    border-radius: 5px;
-    margin-left: 2rem;
-}
-
 /* Estilos de contenido principal  */
 
 h1 {
@@ -128,7 +54,7 @@ p {
 
 input[type=email]{
     width: 250px;
-    height: 33px;
+    height: 54px;
     padding: 10px;
     border: 1px solid darkgrey;
     outline: 0px;
