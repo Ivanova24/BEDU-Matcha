@@ -76,9 +76,16 @@ button[type=submit] {
 button {
     color: #fff;
     background-color: #025157;
+    padding: 0.4rem;
 }
 
+button:hover {
+    background-color: #67b54b;
+}
 
+.margen {
+    margin-left: 1rem;
+}
 
 
 section .email {
