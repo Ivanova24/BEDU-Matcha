@@ -382,7 +382,7 @@ figure {
      }
 
      .publish > form > input[type=email] {
-         width: 70%
+         width: 70%;
          font-size: 0.9rem;
      }
 
